@@ -71,13 +71,7 @@ export default async function handler(req, res) {
         ...messages,
       ],
     });
-  const formattedResponse = aiResponse.choices[0].message.content
-  .replace(/(\d️⃣)/g, "\n\n$1 ")  // Þvingar nýja línu fyrir hverja spurningu
-  .replace(/(\d️⃣\s)/g, "\n$1")  // Tryggir að númerin séu á nýrri línu
-  .replace(/([^.?!])(\?)/g, "$1$2\n\n")  // Setur tvöfalt línubil eftir spurningamerki
-  .replace(/([^.?!])(:)/g, "$1$2\n\n")  // Setur tvöfalt línubil eftir tvípunkt
-  .replace(/(\d️⃣ [^\n]*)/g, "\n\n$1\n"); // Tryggir nýja línu eftir spurningu
-
+  
 let aiText = aiResponse.choices[0].message.content;
 
     // **Bætum við sértækum aðilum og bókunarhnöppum**

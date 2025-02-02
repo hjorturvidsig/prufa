@@ -6,8 +6,6 @@ export default function Booking() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
   const [email, setEmail] = useState("");
 	const router = useRouter();
 
