@@ -61,9 +61,9 @@ console.log("AI svar sem birtist í spjallinu:", messages);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-2xl font-bold mb-4">Heilsutenging</h1>
+      <h1 className="text-2xl font-bold mb-4">Spurðu</h1>
       <div className="w-full max-w-lg bg-white p-6 rounded shadow-md overflow-y-auto h-96">
-	<img src="/logo.png" alt="Heilsutenging logo" className="w-38 h-38 opacity-80 mx-auto" />    
+	<img src="/logo.png" alt="Spurðu logo" className="w-38 h-38 opacity-80 mx-auto" />    
     {Array.isArray(messages) && messages.map((msg, index) => {
 
 	      	//Reynum að finna fyrirtækið í mismunandi uppsetningum frá AI
@@ -74,7 +74,7 @@ console.log("AI svar sem birtist í spjallinu:", messages);
 	}
 
 	const hasAskedEnoughQuestions = messages.filter(m => m.role === "assistant").length > 1; 
-	const matchAnyCompany = msg.content.match(/(Húðlæknastöðin|Heilsugæslan við Höfða|Sameind|Heyrn|HP Þjálfun ehf|Tannlæknastofan brostu|Sjónlag|Hjartamiðstöðin|Gigtarmiðstöð Íslands)/i); // Bætum við fleiri nöfnum
+	const matchAnyCompany = msg.content.match(/(Sálfræðistofan Höfðabakka|Húðlæknastöðin|Heilsugæslan við Höfða|Sameind|Heyrn|HP Þjálfun ehf|Tannlæknastofan brostu|Sjónlag|Hjartamiðstöðin|Gigtarmiðstöð Íslands)/i); // Bætum við fleiri nöfnum
 	
 
 	// Ef við finnum fyrirtæki, uppfærum detectedCompany

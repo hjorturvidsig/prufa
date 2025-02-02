@@ -80,22 +80,22 @@ export default function Chat({ user, onLogout }) {
   };
 
   return (
-  <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+   <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
     {/* Fixed logout button */}
     <button
       onClick={onLogout}
-      className="fixed top-4 right-4 bg-white text-black border border-black px-6 py-3 text-lg rounded shadow-lg z-50"
+      className="fixed top-4 right-4 bg-red bg-opacity-75 text-black px-8 py-4 text-xl font-bold rounded border-2 border-white shadow-2xl z-50 drop-shadow-xl"
+  style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
     >
       Útskrá
     </button>
-    <h1 className="text-2xl font-bold mb-4">Halló, {user.name}!</h1>
-    
+    <h1 className="text-2xl font-bold mb-4">Hæhæ, {user.name}!</h1>
     {/* Chat container sem inniheldur mynd, skilaboð o.s.frv. */}
     <div className="w-full max-w-lg bg-white p-6 rounded shadow-md overflow-y-auto h-96">
       <img
         src="/logo.png"
-        alt="Heilsutenging logo"
-        className="w-38 h-38 opacity-80 mx-auto mb-4"
+        alt="Spurðu logo"
+        className="w-90 h-auto opacity-80 mx-auto mb-4"
       />
       {Array.isArray(messages) &&
         messages.map((msg, index) => {

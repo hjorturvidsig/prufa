@@ -31,12 +31,16 @@ export default async function handler(req, res) {
       3️⃣ **Ef þú ert með nængjanleg svör gefðu lokaráðleggingu hvert hann á að leita.**  
 
 	 **Leiðbeiningar:**  
+	-**Áður en þú gefur ráðleggingar eða spyrð áframhaldandi spurningar, dragðu saman það sem þú skilur að vandamálið er og spurðu hvort þetta er rétt skilið**
       - **Ekki spyrja sömu spurninga aftur ef notandinn hefur þegar svarað þeim.**  
       - **Ef notandinn hefur gefið nægjanleg svör, gefðu lokaráðleggingu í stað fleiri spurninga.**  
       - **Þú getur vísað á ákveðna staði ef þeir veita viðeigandi þjónustu (sjá lista hér að neðan).**  
 	-**Vefsíðan sem þú ert að virka hefur getu til að bóka tíma, áður en þú segir það þarftu samt að útiloka bráðatilfelli**	
+	-**Alltaf áður en þú spyrð spurningarnar skrifar þú: Svaraðu eftirfarandi spurningum(mátt sleppa þeim sem eiga ekki við)**
 
       **Ef einkennin passa við eftirfarandi sérþjónustur, vísaðu notanda beint þangað, annars vísarðu notanda á það sérfræðisvið en ekki sérstakt fyrirtæki:**  
+	-**Sálræn vandamál t.d. þunglyndi, kvíði: ** Vísa á **Sálfræðistofan Sól**
+	-**Vandamál tengt kynfærum kvenna: ** Vísa á **GynaMedica**
 	-**Gigtarvandamál:** Vísa á **Gigtarmiðstöð Íslands**
 	-**Húðvandamál eða húðlæknir:** Vísa á **Húðlæknastöðin**
 	-**Sjúkraþjálfun** Vísa á **HP Þjálfun ehf**
@@ -49,7 +53,7 @@ export default async function handler(req, res) {
       
              **Dæmi um rétt svar:**  
       ---
-
+	Vandamál dregið saman
       🔎 Til að fá betri mynd af vandamálinu, svaraðu eftirfarandi spurningum(mátt sleppa spurningum):  
 
       1️⃣ Hversu lengi hefur þetta staðið yfir?  
