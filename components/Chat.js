@@ -58,8 +58,12 @@ export default function Chat({ user, onLogout }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: newMessages }),
+        
       });
-      const data = await response.json();
+const rawData = await response.text();
+console.log("Raw API response:", rawData);
+      
+     const data = JSON.parse(rawData);
       const aiResponse =
         data.response ||
         (data.choices && data.choices[0]?.message?.content) ||
