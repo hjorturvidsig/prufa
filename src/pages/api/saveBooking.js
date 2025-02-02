@@ -23,7 +23,7 @@ export default async function handler(req, res) {
   }
 
 
-  const { company, name, email, phone, date, time } = req.body;
+  const { company, name, email, phone } = req.body;
   if (!company || !phone || !email) {
     return res.status(400).json({ message: "Missing required booking data" });
   }
